@@ -1,44 +1,41 @@
 package packOne;
 
-class Account {
+import java.util.Scanner;
 
-  double balance;
-  String holder;
-  final int id;
-  double deposit;
-  double withdrawal;
-  public double getDeposit() {
-    return deposit;
-  }
+import static java.lang.String.format;
 
-  public void setDeposit(double deposit) {
-    this.deposit = deposit;
-  }
+public class BankAccount {
 
-  public double getWithdrawal() {
-    return withdrawal;
-  }
+  private int id;
+  private double balance;
+  private String holder;
 
-  public void setWithdrawal(double withdrawal) {
-    this.withdrawal = withdrawal;
-  }
-  
-  Account(int id) {
-
+  public BankAccount(int id, String holder) {
     this.id = id;
+    this.holder = holder;
   }
-  Account(double balance, String holder, int id) {
-    this.balance = balance;
+  public BankAccount(int id, String holder, double initialDeposit) {
     this.holder = holder;
     this.id = id;
+    deposit(initialDeposit);
   }
 
+  public void deposit(double amount) {
+    balance+=amount;
+  }
+
+  public void withdraw(double amount) {
+    balance-=amount + 5.0;
+  }
+  /**
+   *
+   * balance can only be changed via deposit/withdrawal
+   * so no setBalance();
+   * Accounts can not be changed... so no setBankAccount();
+   *
+   */
   public double getBalance() {
     return balance;
-  }
-
-  public void setBalance(double balance) {
-    this.balance = balance;
   }
 
   public String getHolder() {
@@ -53,20 +50,14 @@ class Account {
     return id;
   }
 
-  public void setId(int id) {
-    this.id = id;
-  }
-
   @Override
   public String toString() {
-    return "Account{" +
-            "balance=" + balance +
-            ", holder='" + holder + '\'' +
-            ", id=" + id +
-            ", deposit=" + deposit +
-            ", withdrawal=" + withdrawal +
-            '}';
+    return "Account: "
+            + id
+            + ", Holder: "
+            + holder
+            + ", Balance: $ "
+            + String.format("%.2f",balance);
   }
 }
-public class BankAccount {
-}
+
