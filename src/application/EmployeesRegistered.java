@@ -66,9 +66,7 @@ class Employee {
       String name;
       double salary;
       List<Employee> employee = new ArrayList<Employee>();
-//      Employee data = new Employee();
       while (numberOfEmployees > 0) {
-
         System.out.println("Employee #" + count + ":");
         System.out.print("Id: ");
         id = sc.nextInt();
@@ -81,13 +79,13 @@ class Employee {
         numberOfEmployees--;
         count+=1;
       }
-//      System.out.println(employee);
       System.out.println("Enter the employee id that will have a salary increase: ");
       id = sc.nextInt();
 
       int finalId = id;
 
       Object obj = employee.stream().filter(x->x.getId() == finalId).findFirst().orElse(null);
+
       if (obj != null) {
         System.out.println(obj);
       } else {
