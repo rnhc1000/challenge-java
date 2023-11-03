@@ -32,16 +32,11 @@ public class TryCatch {
       System.out.print("Check-out date (dd/MM/YYYY): ");
       checkOut = formatter.parse(sc.next());
 
-      Date now = new Date();
-      if (checkIn.before(now) || checkIn.before(now)) {
-        System.out.println("wrong check dates!");
-      } else if (!checkOut.after(checkIn)) {
-        System.out.println("Checkout date must be after ckeckin date!");
-      } else {
-        reservation.updateDates(checkIn, checkOut);
-        System.out.println("Reservation: " + reservation);
+      String error = reservation.updateDates(checkIn, checkOut);
+      if ( error != null){
+        System.out.println("Error in reservation: " + error);
       }
-
+        System.out.println("Reservation: " + reservation);
     }
 
     sc.close();
