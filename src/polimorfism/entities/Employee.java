@@ -48,7 +48,7 @@ public class Employee {
             '}';
   }
 
-  public void payment (Double amount) {
-    Double income = hours * valuePerHour;
+  public Double payment () {
+    return hours * valuePerHour;
   }
 }

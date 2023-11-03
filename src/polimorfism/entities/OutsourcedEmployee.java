@@ -3,7 +3,9 @@ package polimorfism.entities;
 public class OutsourcedEmployee extends Employee{
   private Double additionalCharge;
 
-  public OutsourcedEmployee(){}
+  public OutsourcedEmployee(){
+    super();
+  }
 
   public OutsourcedEmployee(String name, Integer hours, Double valuePerHour, Double additionalCharge) {
     super(name, hours, valuePerHour);
@@ -19,7 +21,7 @@ public class OutsourcedEmployee extends Employee{
   }
 
   @Override
-  public void payment (Double amount) {
-    Double income = hours * valuePerHour * 1.1;
+  public Double payment () {
+   return super.payment() + additionalCharge * 1.1;
   }
 }
