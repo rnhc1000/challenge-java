@@ -5,6 +5,7 @@ import consumer.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Solution {
   public static void main(String[] args) {
@@ -30,7 +31,10 @@ public class Solution {
     list.forEach(Product::nonStaticPriceUpdate );
     list.forEach(System.out::println);
     System.out.println("--------------------------------");
-
+    Consumer<Product> cons = product -> {
+      product.setPrice(product.getPrice() * 1.1);
+    };
+    list.forEach(cons);
 
   }
 }
