@@ -55,4 +55,7 @@ public class Product {
             ", price=" + String.format("%.2f" , price) +
             '}';
   }
+  public static void staticPriceUpdate(Product product) {
+    product.setPrice(product.getPrice() * 1.1);
+  }
 }
