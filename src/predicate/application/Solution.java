@@ -41,7 +41,7 @@ public class Solution {
     list.add(new Product("HD Case", 80.90));
     System.out.println("-------------------------------------");
 
-    list.removeIf(Product::ProductPredicate);
+    list.removeIf(Product::ProductPredicateNonStatic);
     System.out.println(list);
 
 //    for (Product p : list) {
