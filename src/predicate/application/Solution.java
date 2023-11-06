@@ -33,9 +33,19 @@ public class Solution {
     list.add(new Product("Tablet", 350.50));
     list.add(new Product("HD Case", 80.90));
     list.removeIf(new ProductPredicate());
+    System.out.println(list);
+    System.out.println("-------------------------------------");
+    list.add(new Product("Tv", 900.00));
+    list.add(new Product("Mouse", 50.00));
+    list.add(new Product("Tablet", 350.50));
+    list.add(new Product("HD Case", 80.90));
+    System.out.println("-------------------------------------");
 
-    for (Product p : list) {
-      System.out.println(p);
-    }
+    list.removeIf(Product::ProductPredicate);
+    System.out.println(list);
+
+//    for (Product p : list) {
+//      System.out.println(p);
+//    }
   }
 }
