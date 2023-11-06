@@ -35,6 +35,11 @@ public class Solution {
       product.setPrice(product.getPrice() * 1.1);
     };
     list.forEach(cons);
+    list.forEach(System.out::println);
+    System.out.println("--------------------------------");
+    list.forEach(product -> product.setPrice(product.getPrice() * 1.1));
+    list.forEach(System.out::println);
+
 
 
   }
