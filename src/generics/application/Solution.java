@@ -11,10 +11,10 @@ public class Solution {
     System.out.print("Qty to be printed:");
     int count = sc.nextInt();
     sc.nextLine();
-    PrintService ps = new PrintService();
+    PrintService<String> ps = new PrintService<String>();
     for (int i=0; i<count; i++){
       System.out.printf("Value: %d", i, ": ");
-      Integer added = sc.nextInt();
+      String added = sc.next();
       sc.nextLine();
       ps.addValue(added);
     }

@@ -3,19 +3,19 @@ package generics.services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
+public class PrintService<T> {
 
   private Integer value;
-  protected List<Integer> list = new ArrayList<>();
+  protected List<T> list = new ArrayList<T>();
 
   public PrintService() {
 
   }
 
-  public void addValue(Integer value) {
+  public void addValue(T value) {
     list.add(value);
   }
-  public Integer first(){
+  public T first(){
     if (list.isEmpty()) {
       throw new IllegalStateException("List is empty");
     }
@@ -23,8 +23,8 @@ public class PrintService {
   }
   public void print(){
     System.out.print("[ ");
-    for (Integer integer : list) {
-      System.out.print(integer + " ");
+    for (int i=0;i<list.size();i++) {
+      System.out.print(list.get(i) + " ");
     }
     System.out.print("]");
   }
