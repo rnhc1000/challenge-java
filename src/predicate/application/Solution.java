@@ -6,6 +6,7 @@ import predicate.util.ProductPredicate;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Solution {
   public static void main(String[] args) {
@@ -40,8 +41,8 @@ public class Solution {
     list.add(new Product("Tablet", 350.50));
     list.add(new Product("HD Case", 80.90));
     System.out.println("-------------------------------------");
-
-    list.removeIf(Product::ProductPredicateNonStatic);
+    Predicate<Product> prod = ((x) ->x.getPrice()>=900.0);
+    list.removeIf(prod);
     System.out.println(list);
 
 //    for (Product p : list) {
