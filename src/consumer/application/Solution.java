@@ -25,8 +25,12 @@ public class Solution {
     list.forEach(System.out::println);
     System.out.println("--------------------------------");
     list.forEach(Product::staticPriceUpdate);
-
     list.forEach(System.out::println);
+    System.out.println("--------------------------------");
+    list.forEach(Product::nonStaticPriceUpdate );
+    list.forEach(System.out::println);
+    System.out.println("--------------------------------");
+
 
   }
 }

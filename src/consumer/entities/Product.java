@@ -58,4 +58,7 @@ public class Product {
   public static void staticPriceUpdate(Product product) {
     product.setPrice(product.getPrice() * 1.1);
   }
+ public void nonStaticPriceUpdate() {
+    price*= 1.1;
+  }
 }
