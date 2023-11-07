@@ -29,6 +29,14 @@ public class Solution {
 
     names= list.stream().map(Product::staticUpperCaseName).toList();
     names.forEach(System.out::println);
+    System.out.println("---------reference method non static-------------------");
+    list.clear();
+    list.add(new Product("Tv", 900.00));
+    list.add(new Product("Mouse", 50.00));
+    list.add(new Product("Tablet", 350.50));
+    list.add(new Product("HD Case", 80.90));
 
+    names= list.stream().map(Product::nonStaticUpperCaseName).toList();
+    names.forEach(System.out::println);
   }
 }
