@@ -18,34 +18,34 @@ public class Solution {
     list.add(new Product("Tablet", 350.50));
     list.add(new Product("HD Case", 80.90));
 
-    if (list.isEmpty()) {
-      throw new IllegalArgumentException();
-    }
-//    else {
+    if (!list.isEmpty()) {//    else {
 //      for (Product p : list) {
 //        System.out.println(p);
 //      }
 //    }
-    System.out.println("-------------------------------------");
-    list.removeIf(x -> x.getName().length()> 2);
-    System.out.println(list);
-    System.out.println("-------------------------------------");
-    list.add(new Product("Mouse", 50.00));
-    list.add(new Product("Tablet", 350.50));
-    list.add(new Product("HD Case", 80.90));
-    list.removeIf(new ProductPredicate());
-    System.out.println(list);
-    System.out.println("-------------------------------------");
-    list.add(new Product("Tv", 900.00));
-    list.add(new Product("Mouse", 50.00));
-    list.add(new Product("Tablet", 350.50));
-    list.add(new Product("HD Case", 80.90));
-    System.out.println("-------------------------------------");
-    list.removeIf((x) ->x.getPrice()>=900.0);
-    System.out.println(list);
+      System.out.println("-------------------------------------");
+      list.removeIf(x -> x.getName().length() > 2);
+      System.out.println(list);
+      System.out.println("-------------------------------------");
+      list.add(new Product("Mouse", 50.00));
+      list.add(new Product("Tablet", 350.50));
+      list.add(new Product("HD Case", 80.90));
+      list.removeIf(new ProductPredicate());
+      System.out.println(list);
+      System.out.println("-------------------------------------");
+      list.add(new Product("Tv", 900.00));
+      list.add(new Product("Mouse", 50.00));
+      list.add(new Product("Tablet", 350.50));
+      list.add(new Product("HD Case", 80.90));
+      System.out.println("-------------------------------------");
+      list.removeIf((x) -> x.getPrice() >= 900.0);
+      System.out.println(list);
 
 //    for (Product p : list) {
 //      System.out.println(p);
 //    }
+    } else {
+      throw new IllegalArgumentException();
+    }
   }
 }

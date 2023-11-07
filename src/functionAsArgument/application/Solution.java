@@ -17,7 +17,8 @@ public class Solution {
     list.add(new Products("Ipad Tablet", 350.50));
     list.add(new Products("Monitor", 80.90));
 
-    double sum = new ProductsService().filteredSum(list, p->p.getName().charAt(0)=='M');
+//    double sum = new ProductsService().filteredSum(list, p->p.getName().charAt(0)=='M');
+    double sum = new ProductsService().filteredSum(list, p->p.getPrice() >= 900.0);
 
     System.out.printf("Sum: %.2f",sum);
 
