@@ -1,7 +1,6 @@
 package predicate.util;
 
 import predicate.entities.Product;
-
 import java.util.function.Predicate;
 
 public class ProductPredicate implements Predicate<Product> {
@@ -10,4 +9,5 @@ public class ProductPredicate implements Predicate<Product> {
   public boolean test(Product product) {
     return product.getPrice() >= 100.0;
   }
+
 }

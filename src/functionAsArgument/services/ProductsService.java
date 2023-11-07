@@ -1,7 +1,6 @@
 package functionAsArgument.services;
 
 import functionAsArgument.entities.Products;
-
 import java.util.List;
 import java.util.function.Predicate;
 
