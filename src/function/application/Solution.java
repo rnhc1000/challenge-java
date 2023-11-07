@@ -39,7 +39,7 @@ public class Solution {
 
     names= list.stream().map(Product::nonStaticUpperCaseName).toList();
     names.forEach(System.out::println);
-        System.out.println("--------- lambda declarada -------------------");
+    System.out.println("--------- lambda declarada -------------------");
     list.clear();
     list.add(new Product("Tv", 900.00));
     list.add(new Product("Mouse", 50.00));
@@ -47,6 +47,14 @@ public class Solution {
     list.add(new Product("HD Case", 80.90));
     Function<Product, String> func = product -> product.getName().toUpperCase();
     names= list.stream().map(func).toList();
+    names.forEach(System.out::println);
+    System.out.println("--------- lambda embedded -------------------");
+    list.clear();
+    list.add(new Product("Tv", 900.00));
+    list.add(new Product("Mouse", 50.00));
+    list.add(new Product("Tablet", 350.50));
+    list.add(new Product("HD Case", 80.90));
+    names= list.stream().map( product -> product.getName().toUpperCase()).toList();
     names.forEach(System.out::println);
 
   }
