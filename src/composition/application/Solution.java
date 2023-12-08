@@ -27,7 +27,7 @@ public class Solution {
     System.out.print("Base Salary: ");
     Double baseSalary = sc.nextDouble();
 
-    workerName=workerName.toUpperCase();
+    workerName = workerName.toUpperCase();
     level = level.toUpperCase();
     departmentName= departmentName.toUpperCase();
 
