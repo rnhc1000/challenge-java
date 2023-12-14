@@ -28,7 +28,8 @@ There are a bunch of challenges resolved my way. What I mean by that? No copy/pa
 - Live Site URL: [] 
 ## _Built with_
 
- ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | !
+ ![](https://ferreiras.dev.br/assets/images/icons/java-icon.svg)| ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-intellij-idea.svg) | ![](https://ferreiras.dev.br/assets/images/icons/linux-original.svg) | ![](https://ferreiras.dev.br/assets/images/icons/icons8-visual-studio-code.svg)
+
  ## _What I practiced_
 ```java
 package streamChallengeTwo.application;
@@ -107,6 +108,7 @@ public class StreamChallengeTwo {
 
 ## _Continued development_
 - Next step: Java 21 Virtual Threads.
+- 
 ### _Useful resources_
 - [https://docs.oracle.com/en/java/] Always trust and read the official documentation!
 

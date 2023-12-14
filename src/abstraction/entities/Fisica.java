@@ -30,4 +30,11 @@ public class Fisica extends Contribuinte {
       return income * 0.15 - getHealthcareExpenses()/2;
     }
   }
+
+  @Override
+  public String toString() {
+    return "Fisica{" +
+            "healthcareExpenses=" + healthcareExpenses +
+            '}';
+  }
 }
