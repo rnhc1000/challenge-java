@@ -2,8 +2,9 @@ package linkedin.assesmentJava;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class AtomicClass {
+public class ClassAtomic {
 
+  static boolean newValue;
   private static AtomicBoolean isActive = new AtomicBoolean();
   private Object lock = new Object();
   public synchronized boolean isActiveV1 (boolean newValue) {

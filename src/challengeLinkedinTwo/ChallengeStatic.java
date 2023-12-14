@@ -9,7 +9,7 @@ public class ChallengeStatic {
   }
 
   public void fly(int distance) {
-    System.out.print(end - start+ " ");
+    System.out.print(end - start + " ");
     System.out.print(distance);
   }
 
