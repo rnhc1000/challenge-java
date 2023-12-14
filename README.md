@@ -1,3 +1,36 @@
+## Java Coding Daily - @Ricardo Ferreira
+The more senior you are the more you're involved with mentoring, helping, monitoring, discussing ideas and you have less time dedicated to code what is the most important activity for a programmer.
+To keep up with the recent developments and evolution of Java language there is no other solution than coding as much as you can, revisiting concepts, ideas, suggestions, doubts etc...
+Here I have meet my peace of mind and happiness in coding as much as I can.
+There are a bunch of challenges resolved my way. What I mean by that? No copy/paste from anywhere, doesn't matter the outcome of my solution. Sometimes you will find O(1) solutions but sometimes you will find some O(n2). So the deal is... Try to improve it and open up a PR...
+
+## _Tools_
+- Java 17
+- IntelliJ Community Edition
+
+## _Table of contents_
+- [Java Coding Daily - @Ricardo Ferreira](#java-coding-daily---ricardo-ferreira)
+- [_Tools_](#tools)
+- [_Table of contents_](#table-of-contents)
+- [_Screenshot_](#screenshot)
+- [_Links_](#links)
+- [_Built with_](#built-with)
+- [_What I practiced_](#what-i-practiced)
+- [_Continued development_](#continued-development)
+  - [_Useful resources_](#useful-resources)
+- [_Author_](#author)
+- [Acknowledgments](#acknowledgments)
+
+
+## _Screenshot_
+[![](./carbon.png)]()
+## _Links_
+- Live Site URL: [] 
+## _Built with_
+
+ ![](https://ferreiras.dev.br/assets/images/icons/git-scm-icon.svg) | !
+ ## _What I practiced_
+```java
 package streamChallengeTwo.application;
 
 import polimorfism.entities.Employee;
@@ -17,8 +50,10 @@ import java.util.Scanner;
  * Mostrar também a soma dos salários dos funcionários cujo
  * nome começa com a letra 'M'.
  * Execution:
- * Input:-> Enter salary: 2000.00
- * Output:-> Email of people whose salary is more than 2000.00:
+ * Input:-> 
+ * Enter salary: 2000.00
+ * Output:->
+ * Email of people whose salary is more than 2000.00:
  * anna@gmail.com
  * bob@gmail.com
  * maria@gmail.com
@@ -67,3 +102,14 @@ public class StreamChallengeTwo {
     }
   }
 }
+
+``` 
+
+## _Continued development_
+- Next step: Java 21 Virtual Threads.
+### _Useful resources_
+- [https://docs.oracle.com/en/java/] Always trust and read the official documentation!
+
+## _Author_
+- Website - [https://ferreiras.dev.br] 
+## Acknowledgments

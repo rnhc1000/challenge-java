@@ -1,6 +1,19 @@
 package staticBlock;
-
-
+/**
+ * Goal:
+ * Static variables & static blocks
+ * order of preference when main is executed!
+ * Static always first!!!
+ * Output of the code...
+ * Parent static anonymous block
+ * Children static block
+ * Start
+ * Non-static Parent anonymous block
+ * Parent
+ * Non-static Children anonymous block
+ * Children
+ * End
+ */
 class Parent {
   public Parent() {
   System.out.println("Parent");
@@ -30,6 +43,9 @@ public class Children extends Parent {
     Children children = new Children();
     System.out.println("End");
   }
+
 }
+
+
 
 
