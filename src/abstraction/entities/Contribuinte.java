@@ -5,7 +5,6 @@ public abstract class Contribuinte {
   private Double annualIncome;
 
   public Contribuinte() {
-
   }
 
   public Contribuinte(String name, Double annualIncome) {

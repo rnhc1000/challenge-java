@@ -38,6 +38,7 @@ public class StreamChallengeTwo {
         listEmployees.add(new Employex(lines[0], lines[1], Double.parseDouble(lines[2])));
 
       }
+
       Scanner sc = new Scanner(System.in);
       System.out.print("Enter salary: ");
       double salary = sc.nextDouble();
